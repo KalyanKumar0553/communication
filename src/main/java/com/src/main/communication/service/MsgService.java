@@ -51,7 +51,7 @@ public class MsgService {
 		sendEmail(sender, recipient, subject, html);
 	}
 
-	private void sendEmail(String sender, String recipient, String subject, String html) {
+	public void sendEmail(String sender, String recipient, String subject, String html) {
 		EmailMessage message = new EmailMessage()
 				.setSenderAddress(sender)
 				.setToRecipients(recipient)
